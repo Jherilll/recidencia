@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/output.css" rel="stylesheet">
+    <title>Responsive Homepage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+</head>
+<body class="bg-gray-100">
+<!-- Navbar -->
+<nav class="bg-white fixed w-full top-0 left-0 shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="index.html" class="text-xl font-bold text-gray-800">Recidencia Del Hamor Beach Front</a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-6 text-lg">
+            <a href="index.html" class="text-gray-700 hover:text-green-500 transition">Home</a>
+            <a href="abuot us.html" class="text-gray-700 hover:text-green-500 transition">About</a>
+            <a href="services.html" class="text-gray-700 hover:text-green-500 transition">Services</a>
+            <a href="contact.html" class="text-gray-700 hover:text-green-500 transition">Contact</a>
+            <a href="location.html" class="text-gray-700 hover:text-green-500 transition">Location</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none text-2xl">
+            ☰
+        </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden  flex-col bg-white shadow-lg absolute top-full left-0 w-full">
+        <a href="index.html" class="text-gray-700 hover:bg-gray-200 transition py-2 px-4">Home</a>
+        <a href="abuot us.html" class="text-gray-700 hover:bg-gray-200 transition py-2 px-4">About</a>
+        <a href="services.html" class="text-gray-700 hover:bg-gray-200 transition py-2 px-4">Services</a>
+        <a href="contact.html" class="text-gray-700 hover:bg-gray-200 transition py-2 px-4">Contact</a>
+        <a href="location.html" class="text-gray-700 hover:bg-gray-200 transition py-2 px-4">Location</a>
+    </div>
+</nav>
+
+
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-gray-100 text-center  hover:text-green-400 transition">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12">About Us</h2>
+            <p class="text-xl">Recidencia Del Hamor Beach Front offers an unforgettable experience of luxury, comfort, and relaxation. Our resort is located by the serene beach, offering stunning views and a peaceful atmosphere for our guests.</p>
+        </div>
+        
+        <!-- Image with a Link -->
+          <br>
+          <a href="https://your-resort-website.com" target="_blank">
+            <img src="https://scontent.fmnl4-1.fna.fbcdn.net/v/t1.6435-9/181680265_134969085314842_3339932006910091605_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHvrVN1x3gECiP_bYvqIzBTMFkSo3tdqD4wWRKje12oPm6zY_2kH4ZDBJ9qp4ldf2AnkGWUkTGD-sn5cO6nGAVY&_nc_ohc=sBd5rPPkv-MQ7kNvgFXjrYp&_nc_oc=AdgKHjWOiF2CQcqHv2IZf2Kd3J8FOKrykk7yhFQGDsW2S9yjG8o0uZVDPQhgtwWleFIdz2Jvwb_kvacF2OFPKcyA&_nc_zt=23&_nc_ht=scontent.fmnl4-1.fna&_nc_gid=ARP2cBkWDWCjILewaZ66-Ql&oh=00_AYEfavFngyEdEWEE84L12vn5v-TpQOESEfn4S3STMpb7iQ&oe=67F7A9DE" alt="Beachfront Resort" class="mx-auto rounded-lg shadow-lg mb-12 w-full max-w-6xl">
+        </a>
+        <p class="text-xl text-gray-600 mb-8">Nestled along the pristine beaches of San Sebastian, Sta. Magdalena, Sorsogon, Recidencia Del Hamor Beach Front offers an unforgettable tropical retreat with breathtaking views, luxurious accommodations, and exceptional services.</p>
+        
+        <!-- Grid Section for Image Cards -->
+         <div class="grid md:grid-cols-2 sm:grid-cols-1 gap-12">
+            <!-- Image Card 1 -->
+             <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://scontent.fmnl4-1.fna.fbcdn.net/v/t1.6435-9/181155827_133005175511233_7029956448322644427_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFgRMRmBaN4mJ_BHwyxIjDapOuSnf_Srhyk65Kd_9KuHF_qVcJmBOPh-qHFME7NIKlmf28Nkin_nY8oN1mP_Ync&_nc_ohc=WnooVxPxWGMQ7kNvgE-H2xo&_nc_oc=Adgrql9fmEaQQXoUUAycr3G2jwMm7x0gJOcQ4dMH0XVReJLwpgN-o2bdfFyFAk3u0Y4PvL3aVt4za93LKKxMudih&_nc_zt=23&_nc_ht=scontent.fmnl4-1.fna&_nc_gid=A7yPwbxAIAzUpqZwwwQssAG&oh=00_AYFl8HjhSqEEQtjVo_fJGT9ng0j7_zWKQOT3kYdnJnX46w&oe=67FA66B0" alt="Beachfront View" class="w-full h-64 object-cover rounded-lg shadow-lg">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-3">A Scenic Escape</h3>
+                    <p class="text-gray-600">Recidencia Del Hamor Beach Front provides an idyllic setting for travelers seeking a peaceful escape. With stunning beachfront views and a serene atmosphere, it's the perfect place for relaxation and adventure.</p>
+                </div>
+            </div>
+        
+        <!-- Image Card 2 -->
+         <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="https://scontent.fmnl4-3.fna.fbcdn.net/v/t1.6435-9/154577818_106234468188304_7504251165069280338_n.jpg?stp=c0.169.1536.1536a_dst-jpg_s206x206_tt6&_nc_cat=109&ccb=1-7&_nc_sid=50ad20&_nc_eui2=AeEfOTdUyWSyeFaYT4iAT1uSMd14fW5pJrcx3Xh9bmkmtyw-BbYj6003ywMTXgPfKzewcRFzTyfmlkd97ad1-BMk&_nc_ohc=gYPFjEI-TAkQ7kNvgFamGVZ&_nc_oc=Adjq7rIANALen5omlEKrGe87mZDA6MKYvCwWCrPYp-zgi_6k38nvgU7ygoftqSH9DrEIR9ZykuON4pU369wIsRAb&_nc_zt=23&_nc_ht=scontent.fmnl4-3.fna&_nc_gid=AV5HKemI1t2EWB144Q25UKE&oh=00_AYEM5LUPsnMuLotNyFuOx5cdqj5Mfr7PtzPmI7-9HTooWw&oe=67FA5631" alt="Luxury Accommodation" class="w-full h-64 object-cover rounded-lg shadow-lg">
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-3">Luxury Accommodation</h3>
+                <p class="text-gray-600">Relax and unwind in our luxurious rooms that offer exceptional comfort, modern amenities, and spectacular views of the beach.</p>
+            </div>
+         </div>
+         
+         <!-- Image Card 3 -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+             <img src="https://scontent.fmnl4-7.fna.fbcdn.net/v/t39.30808-6/473388856_973173841527274_1501960589193625979_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeElzGYru4dob1yLot_D1dYRyvJJKjEVkqnK8kkqMRWSqbBE0k_0EmC5uPzFxrxy8Rp170bCrmLAlDafwl-QkGTH&_nc_ohc=SdmKMDzYdbcQ7kNvgH3keZ1&_nc_oc=AdgVTxMHEjMvGtZl1k_CmOd1j-FEBJ_QW3gCzPhrNYAvqtPJ2mfYzApVIiVLoPkgnOn__B23Ae6cbcF1XiBXsPl5&_nc_zt=23&_nc_ht=scontent.fmnl4-7.fna&_nc_gid=AT7s2dxOnn6AwYsWYI4WeMJ&oh=00_AYFj6NoAZjNYMec-srnF2xl9EB9-8T48GdPusMPqisgKXQ&oe=67D8B634" alt="Wedding Venue" class="w-full h-64 object-cover rounded-lg shadow-lg">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-3">Your Dream Wedding</h3>
+                <p class="text-gray-600">Relax and unwind in our luxurious rooms, perfect for couples seeking a romantic getaway or a serene wedding retreat. Enjoy exceptional comfort, modern amenities, and spectacular beach views, making it an ideal venue for your dream wedding celebration.</p>
+             </div>
+            </div>
+            
+            <!-- Image Card 4 -->
+             <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://scontent.fmnl4-7.fna.fbcdn.net/v/t39.30808-6/469902663_967274315417644_1193759544932380442_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeE7KTouZwRyRjCg9N5guFLbfPbsilNIllp89uyKU0iWWnP6Rwu-7Ma7DPb2axs_1V9b4PtMfBEHYOI6QKRK1y8s&_nc_ohc=qQOLJaAp9NYQ7kNvgG_Zbme&_nc_oc=AdibUB4n4o4S_NXeI1jEkEaNB2IogGC_0n7ktjfhYxStqo42Uyw6K3fiHzGpV_uycEMYPXh5rgjTLdw04YeTtfbs&_nc_zt=23&_nc_ht=scontent.fmnl4-7.fna&_nc_gid=AHCPQ0-L4tHo7QO1d8TIhL4&oh=00_AYEm_C-N86W9p10ORHo0FAdinI3sgbcmmCwBLgSCC8hDeQ&oe=67D8C5F2" alt="Exclusive Event Space" class="w-full h-64 object-cover rounded-lg shadow-lg">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-3">Exclusive Event Space</h3>
+                    <p class="text-gray-600">Our event spaces are designed to create unforgettable moments. Whether it's a wedding reception or a special celebration, we offer a luxurious atmosphere with breathtaking views of the beach.</p>
+                </div>
+            </div>
+        </div>
+        
+       
+
+</body>
+</html>
+
+<script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const links = mobileMenu.querySelectorAll("a");
+
+    menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+    });
+
+    links.forEach(link => {
+        link.addEventListener("click", () => {
+            mobileMenu.classList.add("hidden");
+        });
+    });
+
+    // Auto-close mobile menu on resize
+    window.addEventListener("resize", () => {
+        if (window.innerWidth >= 768) {
+            mobileMenu.classList.add("hidden");
+        }
+    });
+</script>
+
+</body>
+</html>
+
+

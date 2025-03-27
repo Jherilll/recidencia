@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Homepage</title>
+    <link href="src/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+<nav class="bg-white fixed w-full top-0 left-0 shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="index.html" class="text-xl font-bold text-gray-800"> Recidencia Del Hamor Beachfront</a>
+
+        
+        <div class="hidden md:flex space-x-6 text-lg">
+            <a href="index.html" class="text-gray-700 hover:text-green-500 transition"></a>
+            <a href="abuot us.html" class="text-gray-700 hover:text-green-500 transition">About</a>
+            <a href="services.html" class="text-gray-700 hover:text-green-500 transition">Services</a>
+            <a href="contact.html" class="text-gray-700 hover:text-green-500 transition">Contact</a>
+            <a href="location.html" class="text-gray-700 hover:text-green-500 transition">Location</a>
+        </div>
+
+        
+        <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none text-2xl">
+            ☰
+        </button>
+    </div>
+
+
+    <div id="mobile-menu" class="hidden flex-col bg-white shadow-lg absolute top-full left-0 w-full">
+        <a href="index.html" class="text-gray-700 hover:bg-gray-200 transition py-2 px-4">Home</a>
+        <a href="abuot us.html" class="text-gray-700 hover:bg-gray-200 transition py-2 px-4">About</a>
+        <a href="services.html" class="text-gray-700 hover:bg-gray-200 transition py-2 px-4">Services</a>
+        <a href="contact.html" class="text-gray-700 hover:bg-gray-200 transition py-2 px-4">Contact</a>
+        <a href="location.html" class="text-gray-700 hover:bg-gray-200 transition py-2 px-4">Location</a>
+    </div>
+</nav>
+
+
+
+<section class="container mx-auto p-6 pt-24">
+    <h1 class="text-3xl font-bold text-center mb-6">Book a Room</h1>
+    <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <img src="https://thegirlwiththemujihat.com/wp-content/uploads/2023/04/IMG_0971-2048x1365.jpg" alt="Standard Room" class="w-full h-64 object-cover mb-4">
+            <h2 class="text-xl font-semibold">Standard Room</h2>
+            <p class="text-gray-600">Price: <span class="font-bold">Php 11,500</span></p>
+            <p class="text-green-500">Available</p>
+            <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded" onclick="openModal('Standard Room', 'Php 11,500')">Book Now</button>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <img src="https://tides.hotelsboracay.org/data/Pics/OriginalPhoto/13440/1344007/1344007919/the-tides-hotel-boracay-boracay-island-pic-17.JPEG" alt="Junior Suite" class="w-full h-64 object-cover mb-4">
+            <h2 class="text-xl font-semibold">Junior Suite</h2>
+            <p class="text-gray-600">Price: <span class="font-bold">Php 13,000</span></p>
+            <p class="text-green-500">Available</p>
+            <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded" onclick="openModal('Junior Suite', 'Php 13,000')">Book Now</button>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <img src="https://scontent.fmnl4-3.fna.fbcdn.net/v/t1.6435-9/154577818_106234468188304_7504251165069280338_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEfOTdUyWSyeFaYT4iAT1uSMd14fW5pJrcx3Xh9bmkmtyw-BbYj6003ywMTXgPfKzewcRFzTyfmlkd97ad1-BMk&_nc_ohc=zkaiW4bwP4cQ7kNvgHdHPuT&_nc_oc=AdgUOIMCl1Nj-rIEjTUaVtTnFalB0mwtAG16hExO4qVmEBOaV2nbthlyV90XHK4bKks45ooANv88fR_FpfiJxva1&_nc_zt=23&_nc_ht=scontent.fmnl4-3.fna&_nc_gid=aLpHJssL9uQMuNKDh2h4cw&oh=00_AYFRGajlZv2Fj5CFQTcFZa2BbG4s8vWmjItDIgfM2wpPLQ&oe=67FB6F71" alt="Junior Suite" class="w-full h-64 object-cover mb-4">
+            <h2 class="text-xl font-semibold">Deluxe Room</h2>
+            <p class="text-gray-600">Price: <span class="font-bold">Php 15,000</span></p>
+            <p class="text-green-500">Available</p>
+            <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded" onclick="openModal('Junior Suite', 'Php 13,000')">Book Now</button>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max500/422789286.jpg?k=d265946a5af8371312a40b85c79fb83b8c4314782f13bb899a70a0be7b01da0a&o=&hp=1" alt="Junior Suite" class="w-full h-64 object-cover mb-4">
+            <h2 class="text-xl font-semibold">Premier Room</h2>
+            <p class="text-gray-600">Price: <span class="font-bold">Php 15,000</span></p>
+            <p class="text-green-500">Available</p>
+            <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded" onclick="openModal('Junior Suite', 'Php 13,000')">Book Now</button>
+        </div>
+    
+    
+    </div>
+</section>
+
+<section class="container mx-auto p-6 pt-24">
+    <h1 class="text-3xl font-bold text-center mb-6">Book Activities</h1>
+    <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <img src="https://thegirlwiththemujihat.com/wp-content/uploads/2023/04/288732954_396209435857471_2234404736151711417_n-1536x1152.jpeg" alt="Kayaking" class="w-full h-64 object-cover mb-4">
+            <h2 class="text-xl font-semibold">Kayaking</h2>
+            <p class="text-gray-600">Price: <span class="font-bold">Php 500</span></p>
+            <p class="text-green-500">Available</p>
+            <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded" onclick="openModal('Kayaking', 'Php 500')">Book Now</button>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <img src="https://scontent.fmnl4-6.fna.fbcdn.net/v/t1.6435-9/162195277_117215743756843_9117698131587269382_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGYD1mDHET7foU4nWspwt0WoTDR6kVHDd2hMNHqRUcN3YUkGVdHBbeXYBdd9zTbQkmUZ6jmlRt5x_6Pcm3DlTC7&_nc_ohc=FxrafXdBzowQ7kNvgG_G9AE&_nc_oc=AdiUC2qMyA5IiVArjAJF666SQqamsnrTfHCj-mIL4ccAjo0HeIqJNSHtyP6o04aCIPuMcmGCBVUyNCX2-K1VDQ7m&_nc_zt=23&_nc_ht=scontent.fmnl4-6.fna&_nc_gid=Gv6AFlMxv8MxtrzNS5Qn_w&oh=00_AYGahDzcLAIZnbdt8DmpIg9HU92PXkLvB8G-dnb0Nuzkdw&oe=67FE8D42" alt="Scuba Diving" class="w-full h-64 object-cover mb-4">
+            <h2 class="text-xl font-semibold">Scuba Diving</h2>
+            <p class="text-gray-600">Price: <span class="font-bold">Php 300</span></p>
+            <p class="text-green-500">Available</p>
+            <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded" onclick="openModal('Scuba Diving', 'Php 300')">Book Now</button>
+        </div>
+    </div>
+</section>
+
+<section class="container mx-auto p-6 pt-24">
+    <h1 class="text-3xl font-bold text-center mb-6">Book Events</h1>
+    <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <img src="https://scontent.fmnl4-4.fna.fbcdn.net/v/t39.30808-6/484556938_1016310140546977_6266070874503914677_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHCWBn8w2r24eg604m9Srqgd9Ao7Tz6hbF30CjtPPqFsZFE2_pNtJjeUhIldfrIpQ3G-ZWpM4rUyV8mJT6tndHP&_nc_ohc=1fcvw4-TGwUQ7kNvgEtwvbi&_nc_oc=AdjeKNIPqXEtoOOXoSBBmnxCIopTDkjIyc7RRTrtCdZKvDuPEaQdVHSo6QtTf_qN7zMpW2rO35MtROv2nxj4eZaD&_nc_zt=23&_nc_ht=scontent.fmnl4-4.fna&_nc_gid=BjxvY0_Zke02g1VXwbTqwA&oh=00_AYHtPejwPk8zYknrnAK1e5m2ICdA0dIvdiJhgdPU5DB91w&oe=67DCE8CE" alt="Wedding Packages" class="w-full h-64 object-cover mb-4">
+            <h2 class="text-xl font-semibold">Wedding Packages</h2>
+            <p class="text-gray-600">Price: <span class="font-bold">Php 100,000</span></p>
+            <p class="text-green-500">Available</p>
+            <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded" onclick="openModal('Wedding Packages', 'Php 100,000')">Book Now</button>
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div id="bookingModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+    <div class="bg-white p-4 rounded-lg shadow-lg w-80">
+        <h2 class="text-lg font-semibold mb-3">Book Your Stay</h2>
+        <form id="bookingForm">
+            <label class="block mb-1 text-sm">Full Name</label>
+            <input type="text" id="fullName" class="w-full p-1 border rounded mb-3 text-sm" required>
+            
+            <label class="block mb-1 text-sm">Email</label>
+            <input type="email" id="email" class="w-full p-1 border rounded mb-3 text-sm" required>
+            
+            <label class="block mb-1 text-sm">Contact Number</label>
+            <input type="tel" id="contactNumber" class="w-full p-1 border rounded mb-3 text-sm" required>
+            
+            <label class="block mb-1 text-sm">Check-in Date</label>
+            <input type="date" id="checkInDate" class="w-full p-1 border rounded mb-3 text-sm" required>
+            
+            <label class="block mb-1 text-sm">Check-out Date</label>
+            <input type="date" id="checkOutDate" class="w-full p-1 border rounded mb-3 text-sm" required>
+            
+            <label class="block mb-1 text-sm">Selected Room</label>
+            <select id="selectedRoom" class="w-full p-1 border rounded mb-3 text-sm">
+                <option value="Standard Room - Php 11,500">Standard Room - Php 11,500</option>
+                <option value="Junior Suite - Php 13,000">Junior Suite - Php 13,000</option>
+                <option value="Deluxe Room - Php 15,000">Deluxe Room - Php 15,000</option>
+                <option value="Premier Room - Php 15,000">Premier Room - Php 15,000</option>
+            </select>
+            
+            <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded text-sm">Confirm Booking</button>
+        </form>
+        <button onclick="closeModal()" class="mt-3 w-full bg-gray-500 text-white p-2 rounded text-sm">Cancel</button>
+    </div>
+</div>
+ 
+
+<script>
+    function openModal(roomName, price) {
+        document.getElementById('selectedRoom').value = roomName + ' - ' + price;
+        document.getElementById('bookingModal').classList.remove('hidden');
+    }
+    
+    function closeModal() {
+        document.getElementById('bookingModal').classList.add('hidden');
+    }
+
+    document.getElementById('bookingForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Booking Confirmed!');
+        closeModal();
+    });
+</script>
+
+
+<!-- JavaScript -->
+<script>
+   
+    // Mobile menu toggle
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const links = mobileMenu.querySelectorAll("a");
+
+    menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+    });
+
+    links.forEach(link => {
+        link.addEventListener("click", () => {
+            mobileMenu.classList.add("hidden");
+        });
+    });
+
+    // Auto-close mobile menu on resize
+    window.addEventListener("resize", () => {
+        if (window.innerWidth >= 768) {
+            mobileMenu.classList.add("hidden");
+        }
+    });
+</script>
+
+</body>
+</html>
+

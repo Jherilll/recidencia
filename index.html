@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Homepage</title>
+    <link href="src/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+<!-- Navbar --> 
+<nav class="bg-white fixed w-full top-0 left-0 shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="index.html" class="text-xl font-bold text-gray-800"> Recidencia Del Hamor Beachfront</a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-6 text-lg">
+            <a href="index.html" class="text-gray-700 hover:text-green-500 transition"></a>
+            <a href="abuot us.html" class="text-gray-700 hover:text-green-500 transition">About</a>
+            <a href="services.html" class="text-gray-700 hover:text-green-500 transition">Services</a>
+            <a href="contact.html" class="text-gray-700 hover:text-green-500 transition">Contact</a>
+            <a href="location.html" class="text-gray-700 hover:text-green-500 transition">Location</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none text-2xl">
+            ☰
+        </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden flex-col bg-white shadow-lg absolute top-full left-0 w-full">
+        <a href="index.html" class="text-gray-700 hover:bg-gray-200 transition py-2 px-4">Home</a>
+        <a href="abuot us.html" class="text-gray-700 hover:bg-gray-200 transition py-2 px-4">About</a>
+        <a href="services.html" class="text-gray-700 hover:bg-gray-200 transition py-2 px-4">Services</a>
+        <a href="contact.html" class="text-gray-700 hover:bg-gray-200 transition py-2 px-4">Contact</a>
+        <a href="location.html" class="text-gray-700 hover:bg-gray-200 transition py-2 px-4">Location</a>
+    </div>
+</nav>
+   
+    <section id="Home" class="relative w-full h-screen">
+        <!-- Background Video -->
+        <video autoplay loop muted class="absolute top-0 left-0 w-full h-full object-cover">
+            <source src="assets/beachfront0.2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    
+        <!-- Content Overlay (Centered) -->
+        <div class="relative z-10 flex flex-col items-center justify-center w-full h-full px-12 text-center">
+            <div class="max-w-3xl text-black">
+                <h1 class="text-6xl font-extrabold leading-tight mb-6 ">
+                    Recidencia Del Hamor Beachfront
+                </h1>
+                <p class="text-3xl mb-6">
+                    "Every moment is a celebration of love and luxury."
+                </p>
+                <a href="services.html" 
+                 class="px-10 py-4 text-black text-2xl font-semibold rounded-full border-2 border-black 
+                 bg-transparent hover:bg- hover:text-green-400 transition-all duration-300 ease-in-out">
+                  Book Your Stay
+                </a>
+
+             </a>
+            </div>
+        </div>
+    </section>
+    <!-- Amenities Section -->
+     <br><section id="Amenities" class="py-16 bg-gray-100  hover:text-green-400 transition">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <br><h2 class="text-4xl font-semibold mb-8">Our Amenities</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-4">
+                    <i class="fas fa-snowflake text-green-600 text-3xl"></i>
+                    <br><span class="text-lg font-semibold">Air Conditioner</span>
+                    <span class="text-green-600">✔️</span><span>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-4">
+                        <i class="fas fa-parking text-green-600 text-3xl"></i>
+                        <span class="text-lg font-semibold">Parking</span>
+                        <span class="text-green-600">✔️</span><span></span>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-4">
+                        <i class="fas fa-swimming-pool text-green-600 text-3xl"></i>
+                        <span class="text-lg font-semibold">Pool</span>
+                        <span class="text-green-600">✔️</span><span></span>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-4">
+                        <i class="fas fa-eye text-green-600 text-3xl"></i>
+                        <span class="text-lg font-semibold">View</span>
+                        <span class="text-green-600">✔️</span><span></span>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-4">
+                        <i class="fas fa-shield-alt text-green-600 text-3xl"></i>
+                        <span class="text-lg font-semibold">Security/Safety</span>
+                        <span class="text-green-600">✔️</span><span></span>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-4">
+                        <i class="fas fa-basketball-ball text-green-600 text-3xl"></i>
+                        <span class="text-lg font-semibold">Activities</span>
+                        <span class="text-green-600">✔️</span><span></span>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-4">
+                        <i class="fas fa-spa text-green-600 text-3xl"></i>
+                        <span class="text-lg font-semibold">Outdoor swimming pool</span>
+                        <span class="text-green-600">✔️</span><span></span>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-4">
+                        <i class="fas fa-hot-tub text-green-600 text-3xl"></i>
+                        <span class="text-lg font-semibold">Spa</span>
+                        <span class="text-green-600">✔️</span><span></span>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-4">
+                        <i class="fas fa-utensils text-green-600 text-3xl"></i>
+                        <span class="text-lg font-semibold">Restaurant</span>
+                        <span class="text-green-600">✔️</span><span></span>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-4">
+                        <i class="fas fa-cocktail text-green-600 text-3xl"></i>
+                        <span class="text-lg font-semibold">Bar</span>
+                        <span class="text-green-600">✔️</span><span></span>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-4">
+                        <i class="fas fa-concierge-bell text-green-600 text-3xl"></i>
+                        <span class="text-lg font-semibold">Guest Services</span>
+                        <span class="text-green-600">✔️</span><span></span>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-4">
+                        <i class="fas fa-child text-green-600 text-3xl"></i>
+                        <span class="text-lg font-semibold">Child Friendly</span>
+                        <span class="text-green-600">✔️</span><span></span>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-4">
+                        <i class="fas fa-hot-tub text-green-600 text-3xl"></i>
+                        <span class="text-lg font-semibold">Restaurant</span>
+                        <span class="text-green-600">✔️</span><span></span>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-4">
+                        <i class="fas fa-wifi text-green-600 text-3xl"></i>
+                        <span class="text-lg font-semibold">Internet</span>
+                        <span class="text-green-600">✔️</span><span></span>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-4">
+                        <i class="fas fa-wifi text-green-600 text-3xl"></i>
+                        <span class="text-lg font-semibold">Room service</span>
+                        <span class="text-green-600">✔️</span><span></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Feature Cards Section -->
+             <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <section class="py-20 bg-gray-50">
+                    <div class="max-w-7xl mx-auto px-6 text-center">
+                        <h2 class="text-4xl font-bold mb-12">Explore Our Features</h2>
+                        <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <!-- Card 1 -->
+                             <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                                <img src="https://scontent.fmnl4-7.fna.fbcdn.net/v/t39.30808-6/470222313_969877911823951_1662872119914141456_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFvin3cw2dO9gNvFCNLCYT_Kfz2jpVH6_gp_PaOlUfr-FeW0ngwC-qUbSm4Kk1DLM90mssueF_9kgsd2d4Ce34s&_nc_ohc=7DOHk9zUyKQQ7kNvgGFrywL&_nc_oc=AdgW5l6ZBp351QDm8b-bWocpaiBE0VEJZ7zDyqORge4rz4loWWGElXHkGcVY-0sMHOgNgGWv7pp-BfixHSzgTiCW&_nc_zt=23&_nc_ht=scontent.fmnl4-7.fna&_nc_gid=AwQOOWp3AbVXNAIPxgmAzYg&oh=00_AYHmqpRD_GFxe8bnH5Ek0dFmmUlkSKrqfVq-OPdLkFsqXg&oe=67D99F49" alt="Beachfront View" class="w-full h-64 object-cover">
+                                <div class="p-6">
+                                    <h3 class="text-xl font-semibold mb-3">Beachfront View</h3>
+                                     <p class="text-gray-600">Enjoy stunning views of the beach directly from your room, perfect for relaxation and serenity.</p>
+                                    </div>
+                                </div>
+                                <!-- Card 2 -->
+                                 <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                                    <img src="https://scontent.fmnl4-3.fna.fbcdn.net/v/t1.6435-9/154577818_106234468188304_7504251165069280338_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEfOTdUyWSyeFaYT4iAT1uSMd14fW5pJrcx3Xh9bmkmtyw-BbYj6003ywMTXgPfKzewcRFzTyfmlkd97ad1-BMk&_nc_ohc=zkaiW4bwP4cQ7kNvgHdHPuT&_nc_oc=AdgUOIMCl1Nj-rIEjTUaVtTnFalB0mwtAG16hExO4qVmEBOaV2nbthlyV90XHK4bKks45ooANv88fR_FpfiJxva1&_nc_zt=23&_nc_ht=scontent.fmnl4-3.fna&_nc_gid=aLpHJssL9uQMuNKDh2h4cw&oh=00_AYFRGajlZv2Fj5CFQTcFZa2BbG4s8vWmjItDIgfM2wpPLQ&oe=67FB6F71" alt="Luxury Accommodation" class="w-full h-64 object-cover">
+                                    <div class="p-6">
+                                        <h3 class="text-xl font-semibold mb-3">Luxury Accommodation</h3>
+                                        <p class="text-gray-600">Stay in our fully-equipped luxury rooms offering the best amenities for a comfortable stay.</p>
+                                    </div>
+                                </div>
+                                <!-- Card 3 -->
+                                 <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                                    <img src="https://scontent.fmnl4-7.fna.fbcdn.net/v/t39.30808-6/470233731_970677328410676_4476552460940464328_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeENuniJWAjTaWsBMpKu32ucA10C_d2z0tUDXQL93bPS1WRMOEqCB0C0WKEUYVVAC2sTJv4JBvy6lHTpvX9nkuLB&_nc_ohc=4rNF5vMwdZ8Q7kNvgEkUu-w&_nc_oc=Adij3bTOUze6FskeGdliBSIVMq_TZ9kzFlP3Va8yW20E5thfgdQzvsW6YKnyHQyCjwy34LLTQUr8x2yk9GA8-9Bf&_nc_zt=23&_nc_ht=scontent.fmnl4-7.fna&_nc_gid=A6I86i1RFQM24MYHoQ8SpSt&oh=00_AYGiBoOr5Wx2kWv3Umrsr5y-6Y7dflps86uq3bgusL54xg&oe=67D9B7B1" alt="Restaurant Dining" class="w-full h-64 object-cover">
+                                    <div class="p-6">
+                                        <h3 class="text-xl font-semibold mb-3">Restaurant Dining</h3>
+                                        <p class="text-gray-600">Indulge in a variety of international and local cuisines at our on-site restaurant with ocean views.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white text-center py-6 mt-12">
+    <div class="max-w-7xl mx-auto px-6">
+        <p class="text-sm">&copy; 2025 Recidencia Del Hamor Beachfront. All rights reserved.</p> <br> JHERILL C. BALINGBING <br>
+        <div class="flex justify-center space-x-4 mt-2">
+            <a href="abuot us.html" class="hover:text-blue-400">Privacy Policy</a>
+            <span>|</span>
+            <a href="services.html" class="hover:text-blue-400">Terms of Service</a>
+            <span>|</span>
+            <a href="contact.html" class="hover:text-blue-400">Contact Us</a>
+        </div>
+        <div class="mt-4 flex justify-center space-x-4">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" 
+                     alt="Facebook" 
+                     class="w-6 h-6 inline-block">
+            </a>
+        
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
+                     alt="Instagram" 
+                     class="w-6 h-6 inline-block">
+            </a>
+            
+        </div>
+        
+        </div>
+    </div>
+</footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const links = mobileMenu.querySelectorAll("a");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+
+        links.forEach(link => {
+            link.addEventListener("click", () => {
+                mobileMenu.classList.add("hidden");
+            });
+        });
+
+        // Auto-close mobile menu on resize
+        window.addEventListener("resize", () => {
+            if (window.innerWidth >= 768) {
+                mobileMenu.classList.add("hidden");
+            }
+        });
+    </script>
+</body>
+</html>
